@@ -1,0 +1,14 @@
+@import 'null';
+@import 'fonts';
+@import 'variables';
+
+*{
+    font-family: "Proxima Nova", sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0px auto;
+}
+
+@import 'header';
