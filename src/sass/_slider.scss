@@ -1,0 +1,32 @@
+.slider__wrapper {
+    width: 100vw;
+    height: 100%;
+}
+.image-slider {
+    width: 100%;
+    height: 100%;
+ }
+.swiper-container { }
+.image-slider__wrapper { 
+    width: 100%;
+}
+.swiper-wrapper { }
+.image-slider__slide {
+    width: 100%;
+    position: relative;
+ }
+.swiper-slide { }
+.image-slider__image img { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: .8;
+}
+.swiper-zoom-container { }
+.swiper-button-prev { }
+.swiper-button-next { }
+.swiper-pagination { }
+.swiper-scrollbar { }
