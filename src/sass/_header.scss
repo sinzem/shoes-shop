@@ -1,14 +1,10 @@
-// .head__wrapper {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-// }
 .head {
     position: relative;
     &_top {
         width: 100%;
         height: 40px;
         background-color: #000;
+        z-index: 5;
     }
     &_bottom {
         width: 100%;
@@ -137,16 +133,19 @@
 .search_drop-down {
     width: 100%;
     height: 40vh;
-   
+    background-color: #fff;
+    display: none;
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: 0.6s all;
 }
-.search_drop-down.search_active {
+.search_drop-down.search_active {    
+    display: block;
     bottom: -40vh;
     z-index: 2;
+    background-color: #fff;
     border: 1px solid $border-light;
+    opacity: 1;
 }
 .search-input {
     display: block;

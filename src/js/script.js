@@ -14,11 +14,15 @@ const swiper = new Swiper(".image-slider", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    simulateTouch: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    // simulateTouch: true,
     keyboard: {
         enabled: true,
         pageUpDown: true,
     },
-    slidesPerView: 1,
     loop: true,
+    effect: 'fade',
 });
