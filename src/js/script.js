@@ -3,9 +3,10 @@
 window.addEventListener('DOMContentLoaded', () => {
     const searchMenu = document.querySelector(".search_drop-down");
     const search = document.querySelector(".menu-bottom__search");
-
+    const input = document.querySelector(".search-input");
     search.addEventListener("click", () => {
         searchMenu.classList.toggle("search_active");
+        input.classList.toggle("search-input_active");
     });
 });
 
