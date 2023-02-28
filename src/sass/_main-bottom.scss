@@ -1,0 +1,17 @@
+.bottom {
+    height: 100%;
+    padding-bottom: 70px;
+    &__wrapper {
+        width: 1190px;
+        margin: 80px auto 0px;
+    }
+    &__items {
+        display: grid;
+        grid-template: 1fr / repeat(11, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    &__item-cross {
+        text-align: center;
+    }
+}
