@@ -10,7 +10,10 @@
     <title>Shoes shop</title>
 </head>
 <body>
-    <header class="head">
+    <header id="up" class="head">
+        <button class="menu__icon icon-menu" type="button">
+            <span class="icon-menu__line"></span>
+        </button>
         <div class="head_top"></div>
         <div class="head_bottom"></div>
         <div class="head-block">
@@ -78,7 +81,7 @@
             </form>
         </div>
     </header>
-    <main class="main">
+    <!-- <main class="main">
         <section class="top-slider">
             <div class="slider-wrapper">
                 <div class="image-slider swiper-container">
@@ -270,7 +273,7 @@
                     <div class="blog__item blog__arrow">
                         <p>Holly Shriiimp!</p>
                         <p> The Bible vol.1 </p>
-                        <a href="#"><img src="img/blog_arrow_orange.png" alt="arrow"></a>
+                        <a href="#"><img class="blog__arrow__img" src="img/blog_arrow_orange.png" alt="arrow"></a>
                     </div>
                     <div class="blog__item blog__arrow-left">
                         <img src="img/blog_1row_right-top_small_woman.jpg" alt="woman">
@@ -281,12 +284,12 @@
                     <div class="blog__item blog__arrow">
                         <p>The Shelflife "Classic</p>
                         <p>Dripper" is back</p>
-                        <a href="#"><img src="img/blog_arrow_orange.png" alt="arrow"></a>
+                        <a href="#"><img class="blog__arrow__img" src="img/blog_arrow_orange.png" alt="arrow"></a>
                     </div>
                     <div class="blog__item blog__arrow">
                         <p>Rubbing shouolders with</p>
                         <p>Martha Cooper</p>
-                        <a href="#"><img src="img/blog_arrow_orange.png" alt="arrow"></a>
+                        <a href="#"><img class="blog__arrow__img" src="img/blog_arrow_orange.png" alt="arrow"></a>
                     </div>
                     <div class="blog__item blog__arrow-left">
                         <img src="img/blog_2row_left-top_small_sad-woman.jpg" alt="woman">
@@ -300,7 +303,7 @@
                     <div class="blog__item blog__arrow">
                         <p>Puma x BWGH August</p>
                         <p>Releases</p>
-                        <a href="#"><img src="img/blog_arrow_orange.png" alt="arrow"></a>
+                        <a href="#"><img class="blog__arrow__img" src="img/blog_arrow_orange.png" alt="arrow"></a>
                     </div>
                     <div class="blog__item blog__img-big">
                         <img src="img/blog_3row_left_big_.serious-dude.jpg" alt="dude">
@@ -308,7 +311,7 @@
                     <div class="blog__item blog__arrow">
                         <p>RIP Ekon 40HK</p>
                         <p>Remembrance Park Jam</p>
-                        <a href="#"><img src="img/blog_arrow_orange.png" alt="arrow"></a>
+                        <a href="#"><img class="blog__arrow__img" src="img/blog_arrow_orange.png" alt="arrow"></a>
                     </div>
                     <div class="blog__item  blog__arrow-left">
                         <img src="img/blog_3row_right-top_small_girl-with-cola.jpg" alt="girl">
@@ -319,12 +322,12 @@
                     <div class="blog__item blog__arrow">
                         <p>Adidas Original</p>
                         <p>Stan Smith OG</p>
-                        <a href="#"><img src="img/blog_arrow_orange.png" alt="arrow"></a>
+                        <a href="#"><img class="blog__arrow__img" src="img/blog_arrow_orange.png" alt="arrow"></a>
                     </div>
                     <div class="blog__item blog__arrow">
                         <p>Rubbing shouolders with</p>
                         <p>Martha Cooper</p>
-                        <a href="#"><img src="img/blog_arrow_orange.png" alt="arrow"></a>
+                        <a href="#"><img class="blog__arrow__img" src="img/blog_arrow_orange.png" alt="arrow"></a>
                     </div>
                     <div class="blog__item  blog__arrow-left">
                         <img src="img/blog_4row_left-top_small_painter.jpg" alt="painter">
@@ -338,7 +341,7 @@
                     <div class="blog__item blog__arrow">
                         <p>Puma x BWGH August</p>
                         <p>Releases</p>
-                        <a href="#"><img src="img/blog_arrow_orange.png" alt="arrow"></a>
+                        <a href="#"><img class="blog__arrow__img" src="img/blog_arrow_orange.png" alt="arrow"></a>
                     </div>
                 </div>
                 <div class="blog__button">
@@ -385,11 +388,11 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer">
+    </main> -->
+    <!-- <footer class="footer">
         <div class="footer__wrapper">
             <div class="footer__arrow">
-                <img src="img/bottom_arrow+bg.png" alt="arrow">
+                <a href="#up"><img src="img/bottom_arrow+bg.png" alt="arrow"></a>
             </div>
             <div class="footer__menu__block">
                 <div class="footer__menu_left">
@@ -435,19 +438,21 @@
                 </div>
             </div>
             <div class="footer__line"></div>
-            <div class="footer__social">
-                <div class="footer__social__items">
-                    <div class="footer__social__item">
-                        <a href="#"><img src="img/footer_social_facebook.png" alt="facebook"></a>
-                    </div>
-                    <div class="footer__social__item">
-                        <a href="#"><img src="img/footer_social_twitter.png" alt="twitter"></a>
-                    </div>
-                    <div class="footer__social__item">
-                        <a href="#"><img src="img/footer_social_pinterest.png" alt="pinterest"></a>
-                    </div>
-                    <div class="footer__social__item">
-                        <a href="#"><img src="img/footer_social_instagram.png" alt="instagram"></a>
+            <div class="footer__social__wrapper">
+                <div class="footer__social">
+                    <div class="footer__social__items">
+                        <div class="footer__social__item">
+                            <a href="#"><img src="img/footer_social_facebook.png" alt="facebook"></a>
+                        </div>
+                        <div class="footer__social__item">
+                            <a href="#"><img src="img/footer_social_twitter.png" alt="twitter"></a>
+                        </div>
+                        <div class="footer__social__item">
+                            <a href="#"><img src="img/footer_social_pinterest.png" alt="pinterest"></a>
+                        </div>
+                        <div class="footer__social__item">
+                            <a href="#"><img src="img/footer_social_instagram.png" alt="instagram"></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -455,7 +460,7 @@
                 <p>&copy Shelflife Store. All Rigts Reserved</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>

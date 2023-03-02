@@ -19,7 +19,6 @@ const swiper = new Swiper(".image-slider", {
         el: ".swiper-pagination",
         clickable: true,
     },
-    // simulateTouch: true,
     keyboard: {
         enabled: true,
         pageUpDown: true,
@@ -27,3 +26,30 @@ const swiper = new Swiper(".image-slider", {
     loop: true,
     effect: 'fade',
 });
+
+document.addEventListener("click", documentActions);
+
+function documentActions(e) {
+    const targetElement = e.target;
+
+    if (targetElement.closest('.icon-menu')) {
+        document.documentElement.classList.toggle('menu-open');
+    }
+
+    if (targetElement.closest('[data-goto]')) {
+        document.documentElement.classList.contains('menu-open') ?
+            document.documentElement.classList.remove('menu-open') : null;
+            
+        const goTo = targetElement.closest('[data-goto]').dataset.goto;
+        const goToElement = document.querySelector(goTo);
+        const headerHeight = document.querySelector('.header').offsetHeight;
+
+        if (goToElement) {
+            window.scrollTo({
+                top: goToElement.offsetTop - (headerHeight + 15),
+                behavior: "smooth"
+            });
+        }
+        e.preventDefault();
+    }
+}
