@@ -7,6 +7,17 @@
             font-size: 70px;
         }
     }
+    .promo {
+        height: 770px;
+        &__wrapper {
+            width: 100%;
+        }
+        &__cover {
+            grid-template: 1fr 1fr / 1fr;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -142,6 +153,24 @@
             }
         }
     }
+    .promo {
+        height: 714px;
+        &__cover {
+            top: -20px;
+            grid-template: 1fr 1fr /  540px;
+        }
+        &__block {
+            & img {
+                width: 100%;
+            }
+        }
+        &__item {
+            width: 466px;
+        }
+        &__button {
+            margin-top: 20px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -176,6 +205,79 @@
                 line-height: 36px;
                 font-size: 11px;
             }
+        }
+    }
+    .promo {
+        height: 592px;
+        &__cover {
+            grid-template: 1fr 1fr /  450px;
+        }
+        &__items {
+            top: 38px;
+        }
+        &__item {
+            width: 380px;
+            height: 205px;
+        }
+        &__button {
+            margin-top: 22px;
+            & button {
+                font-size: 11px;
+            }
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__title_left p:nth-child(1) {
+            width: 106px;
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .menu-top {
+        &__item {
+            display: none;
+        }
+        &__item:nth-of-type(3) {
+            display: block;
+        }
+    }
+    .search-input {
+        font-size: 52px;
+    }
+    .slide-block__logo {
+        margin-top: 18vh;
+    }
+    .slide-block__title {
+        font-size: 40px;
+    }
+    .slide-block__subtitle {
+        font-size: 14px;
+    }
+    .promo {
+        height: 374px;
+        &__cover {
+            top: -20px;
+            grid-template: 1fr 1fr /  290px;
+        }
+        &__items {
+            top: 22px;
+        }
+        &__item {
+            width: 232px;
+            height: 134px;
+            border: 3px solid #fff;
+        }
+        &__button {
+            margin: 13px 15px 0px 0px;
+            font-size: 10px;
+        }
+        &__title {
+            font-size: 25px;
+        }
+        &__title_left p:nth-child(1) {
+            width: 66px;
         }
     }
 }
