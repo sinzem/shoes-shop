@@ -465,4 +465,14 @@
             height: 60px;
         }
     }
+    .footer {
+        &__menu__item {
+            & a {
+                font-size: 12px;
+            }
+        }
+        &__title {
+            font-size: 12px;
+        }
+    }
 }
